@@ -1,0 +1,48 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:asyncImageLoader="clr-namespace:AsyncImageLoader;assembly=AsyncImageLoader.Avalonia"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Tunify.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
+             x:Class="Tunify.Views.MainView"
+             x:DataType="vm:MainViewModel">
+  <Design.DataContext>
+    <vm:MainViewModel />
+  </Design.DataContext>
+
+	<Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+			<ColumnDefinition Width="2*"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"></RowDefinition>
+			<RowDefinition Height="Auto"></RowDefinition>
+			<RowDefinition Height="Auto"></RowDefinition>
+		</Grid.RowDefinitions>
+
+		<Image Name="Cover1" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Margin="20" Height="200" Width="200"
+			   asyncImageLoader:ImageLoader.Source="https://github.com/AvaloniaUtils/AsyncImageLoader.Avalonia/raw/master/AsyncImageLoader.Avalonia.Demo/Assets/cat2.jpg"/>
+		<Image Name="Cover2" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Margin="20" Height="200" Width="200"
+			   asyncImageLoader:ImageLoader.Source="https://github.com/AvaloniaUtils/AsyncImageLoader.Avalonia/raw/master/AsyncImageLoader.Avalonia.Demo/Assets/cat2.jpg"/>
+		<Image Name="Cover3" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" Margin="20" Height="200" Width="200"
+			   asyncImageLoader:ImageLoader.Source="https://github.com/AvaloniaUtils/AsyncImageLoader.Avalonia/raw/master/AsyncImageLoader.Avalonia.Demo/Assets/cat2.jpg"/>
+		<Image Name="Cover4" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Margin="20" Height="200" Width="200"
+			   asyncImageLoader:ImageLoader.Source="https://github.com/AvaloniaUtils/AsyncImageLoader.Avalonia/raw/master/AsyncImageLoader.Avalonia.Demo/Assets/cat2.jpg"/>
+		<Image Name="Cover5" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Margin="20" Height="200" Width="200"
+			   asyncImageLoader:ImageLoader.Source="https://github.com/AvaloniaUtils/AsyncImageLoader.Avalonia/raw/master/AsyncImageLoader.Avalonia.Demo/Assets/cat2.jpg"/>
+		<Image Name="Cover6" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Margin="20" Height="200" Width="200"
+			   asyncImageLoader:ImageLoader.Source="https://github.com/AvaloniaUtils/AsyncImageLoader.Avalonia/raw/master/AsyncImageLoader.Avalonia.Demo/Assets/cat2.jpg"/>
+		<Image Name="Cover7" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" Margin="20" Height="200" Width="200"
+			   asyncImageLoader:ImageLoader.Source="https://github.com/AvaloniaUtils/AsyncImageLoader.Avalonia/raw/master/AsyncImageLoader.Avalonia.Demo/Assets/cat2.jpg"/>
+		<Image Name="Cover8" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Margin="20" Height="200" Width="200"
+			   asyncImageLoader:ImageLoader.Source="https://github.com/AvaloniaUtils/AsyncImageLoader.Avalonia/raw/master/AsyncImageLoader.Avalonia.Demo/Assets/cat2.jpg"/>
+		<Image Name="Cover9" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" Margin="20" Height="200" Width="200"
+			   asyncImageLoader:ImageLoader.Source="https://github.com/AvaloniaUtils/AsyncImageLoader.Avalonia/raw/master/AsyncImageLoader.Avalonia.Demo/Assets/cat2.jpg"/>
+	
+		
+		
+	</Grid>
+</UserControl>
